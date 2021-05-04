@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="next">Next</string>
+    <string name="isu_marketplace">ISU MarketPlace</string>
+    <string name="sign_in">Sign In</string>
+    <string name="magic">Magic</string>
+    <string name="submit">Submit</string>
+    <string name="username">Username</string>
+    <string name="page_0">Page 0</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notifications">Notifications</string>
+    <string name="chats">Chats</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    <string name="account_created_on_september_14_2020">Account Created on September 14, 2020</string>
+    <string name="password">Password</string>
+</resources>

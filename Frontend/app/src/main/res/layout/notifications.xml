@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Notifications"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:elegantTextHeight="true"
+        android:textSize="35sp"
+        android:gravity="start"
+        tools:ignore="RtlCompat,UnusedAttribute"
+        />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="639dp"
+        android:layout_below="@+id/title"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-9dp"
+        android:layout_marginBottom="70dp"
+        android:dividerHeight="10dp"
+        android:footerDividersEnabled="true"
+        android:paddingTop="10dp"
+         />
+
+</RelativeLayout>

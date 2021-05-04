@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/not"
+    android:padding="8dp"
+    android:outlineAmbientShadowColor="#000000"
+    tools:targetApi="p">
+
+    <ImageView
+        android:id="@+id/ImgNt"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/phone_tick" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="3dp"
+        android:layout_margin="4dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Price:"
+        android:textColor="#040404"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        />
+        <TextView
+            android:id="@+id/priceTag"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+           android:text="$42"
+            android:paddingLeft="20sp"
+            android:textColor="#040404"
+            android:textSize="20sp"
+            style="bold"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:layout_margin="4dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="Title"
+            android:textColor="#040404"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

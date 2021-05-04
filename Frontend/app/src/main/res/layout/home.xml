@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/custom_button"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elegantTextHeight="true"
+        android:gravity="start"
+        android:text="ISU MarketPlace"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat,UnusedAttribute" />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@+id/title"
+        android:layout_marginBottom="-33dp" >
+
+    </SearchView>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="-81dp"
+        android:background="@android:color/holo_red_dark"
+        android:visibility="visible"
+        app:tabIndicatorColor="@color/design_default_color_error"
+        app:tabIndicatorGravity="top">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/AllTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="0dp"
+            tools:layout_editor_absoluteX="-1dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/ClothingTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clothing"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="0dp"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/ElectronicsTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Electronics"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="0dp"
+            tools:layout_editor_absoluteX="205dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/FurnitureTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Furniture"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="0dp"
+            tools:layout_editor_absoluteX="307dp"
+            tools:layout_editor_absoluteY="0dp" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="505dp"
+        android:layout_marginBottom="70dp"
+        android:layout_below="@id/tabs"
+        android:layout_alignBottom="@id/view_pager"
+        android:layout_marginTop="81dp">
+
+<!--        <GridView-->
+<!--            android:id="@+id/grid_view"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:dividerHeight="10dp"-->
+<!--            android:footerDividersEnabled="true"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:numColumns="2"-->
+<!--            android:textAlignment="center"-->
+<!--            android:verticalSpacing="5dp"-->
+<!--            android:visibility="invisible">-->
+
+<!--        </GridView>-->
+    </FrameLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/AddNewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end"
+        android:layout_marginEnd="355dp"
+        android:layout_marginBottom="90dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#FFD041"
+        app:srcCompat="@drawable/ic_baseline_create_24"
+        tools:ignore="VectorDrawableCompat"
+        android:layout_marginRight="355dp"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

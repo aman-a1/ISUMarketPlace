@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Security"
+    android:background="@color/backgroundColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <LinearLayout
+            android:background="@color/redBG"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SECURITY"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center_horizontal"
+                android:textSize="30dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/backbutton2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_baseline_arrow_back_24"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/submitbutton2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="345dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ic_baseline_done_24"
+            android:textColor="#FFFFFF" />
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENTER NEW PASSWORD"
+            android:textColor="@color/textColorBlack"
+            android:layout_marginTop="305dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="305dp">
+
+        <EditText
+            android:id="@+id/editpass"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="47dp"
+            android:backgroundTint="@color/textColorBlack"/>
+
+        <Button
+            android:id="@+id/show"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginLeft="15dp"
+            android:text="SHOW"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/show_button"
+            android:gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ENTER CURRENT PASSWORD"
+            android:textColor="@color/textColorBlack"
+            android:layout_marginTop="135dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="135dp">
+
+        <EditText
+            android:id="@+id/entercur"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="47dp"
+            android:backgroundTint="@color/textColorBlack"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
